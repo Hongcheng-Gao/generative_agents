@@ -1,5 +1,5 @@
 # Copy and paste your OpenAI API Key
-openai_api_key = "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"
+openai_api_key = "sk-CtgBuxtH2Kwzq2d9mEqT3BlbkFJ0KYLCx35rQlRaHP6dc12"
 # Put your name
 key_owner = "hongcheng"
 
