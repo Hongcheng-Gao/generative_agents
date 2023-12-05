@@ -604,19 +604,17 @@ if __name__ == '__main__':
   # rs = ReverieServer("July1_the_ville_isabella_maria_klaus-step-3-20", 
   #                    "July1_the_ville_isabella_maria_klaus-step-3-21")
   # rs.open_server()
+  import shutil
+  name = "July1_the_ville_isabella_maria_klaus-hc"
+  if os.path.exists("../../environment/frontend_server/storage/"+name):
+      shutil.rmtree("../../environment/frontend_server/storage/"+name)
+      print("delete done")
 
-  origin = input("Enter the name of the forked simulation: ").strip()
-  target = input("Enter the name of the new simulation: ").strip()
-
-  rs = ReverieServer(origin, target)
+  rs = ReverieServer("base_the_ville_isabella_maria_klaus", 
+                    name)
+# rs = ReverieServer("July1_the_ville_isabella_maria_klaus-step-3-20", 
+#                    "July1_the_ville_isabella_maria_klaus-step-3-21")
   rs.open_server()
-
-
-
-
-
-
-
 
 
 
